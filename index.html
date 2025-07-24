@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+    @media (max-width:768px){
+        .design{
+            flex-direction: column;
+            align-items: center;
+            padding: 10px;
+        }
+        .design span:hover{
+            background-color: #0056b3;
+            color: azure;
+        }
+        .english{
+            padding: 40px;
+        }
+        #english h3{
+            font-size: 28px;
+        }
+        #english p{
+            font-size: 16px;
+        }
+        .con{
+            font-size: 24px;
+            margin: 0 8px;   
+        }
+        .con:hover{
+             background-color: #0056b3;
+            color: azure;
+        }
+        #ideas{
+            padding: 40px 40px;
+        }
+        #ideas h2{
+            font-size: 28px;
+        }
+        #ideas h4{
+            font-size: 28px;
+        }
+        #ideas p{
+            font-size: 16px;
+        }
+        .image{
+            width: 200px;
+        }
+        #eductaion{
+            padding: 40px 40px;
+        }
+        #education h2{
+            font-size: 28px;
+        }
+        #education h3{
+            font-size: 28px;
+        }
+        #education p{
+            font-size: 16px;
+        }
+        .back{
+            font-size: 16px;
+            padding: 10px 20px;
+            display: block;
+            width: 80%;
+            margin: 10px auto;
+            text-align: center;
+        }
+        #skills{
+            padding: 40px 40px;
+        }
+        #skills h2{
+            font-size: 28px;
+        }
+        .skill-box{
+            font-size: 16px;
+            padding: 16px 32px;
+        }
+        .skill-box:hover{
+            background-color: #007bff;
+            color: white;
+        }
+    }
+    @media (max-width:480px){
+        .design{
+          font-size: 14px;
+        }
+        .design span:hover{
+            background-color: #ff5722;
+            color: azure;
+        }
+        #english{
+            padding: 30px;
+        }
+        #english h3{
+            font-size: 28px;
+        }
+        #english p{
+            font-size: 16px;
+        }
+        .con{
+            font-size: 20px;
+            margin: 0 6px;
+        }
+        .con:hover{
+            background-color: #ff5722;
+            color: azure;
+        }
+        #ideas{
+            padding: 30px 20px;
+        }
+        #ideas h2{
+            font-size: 24px;
+        }
+        #ideas h4{
+            font-size: 24px;
+        }
+        #ideas p{
+            font-size: 14px;
+        }
+        #education{
+            padding: 30px 20px;
+        }
+        #education h2{
+            font-size: 24px;
+        }
+        #education h3{
+            font-size: 24px;
+        }
+        #education p{
+            font-size: 14px;
+        }
+        .image{
+            width: 150px;
+        }
+        .back{
+            font-size: 14px;
+            padding: 8px 16px;
+            width: 90%;
+        }
+        #skills{
+            padding: 30px 20px;
+        }
+        #skills h2{
+            font-size: 24px;
+        }
+        .skill-box{
+            width: 80%;
+            font-size: 14px;
+            padding: 14px 20px;
+        }
+        .skill-box:hover{
+            background-color: #007bff;
+            color: white;  
+        }
+    }
+
+
+       
+.design{
+   color: rgb(240, 200, 149);
+   font-size: 30px;
+   padding: 15px;
+   text-align: end;
+   word-spacing: 20px;
+   background-color: rgb(43, 47, 51);
+   text-decoration: none;
+   
+ }
+ .design span:hover{
+    color: #f25b10;
+    background-color: azure;
+    cursor: pointer;
+ }
+
+ .english{
+    color: rgb(248, 247, 245);
+    background-color: black;
+    font-size: 20px;
+    text-align: center;
+    padding: 50px;
+
+ }
+ .con{
+    font-size: 30px;
+    color: rgb(132, 136, 136);
+    text-align: center;
+    background-color: black;
+    word-spacing: 10px;
+    padding-top: 20px;
+ }
+ .con:hover{
+     color: rgb(104, 110, 110);
+ }
+ /*.about-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;   
+}*/
+/*.btn{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    background-color: black;
+    padding-top: 20px;
+    font-size: 30px;
+    background: black;
+    color: rgb(134, 139, 139);
+    cursor: pointer;
+    border: 2px solid rgb(82, 84, 84) ;
+    border-color: rgb(82, 84, 84);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    
+}*/
+/*.content{
+    color: azure;
+    font-size: 30px;
+    background-color: black;
+    padding: 20px;
+}*/
+.ideas{
+    color: azure;
+    font-size: 20px;
+    background-color: black;
+    text-align: center;
+}
+.image{
+    background-color: black;
+    padding-top: 40px;
+    text-align: center;
+    margin: 0;
+}
+.education{
+    color: azure;
+    font-size: 20px;
+    padding-top: 5px;
+}
+.back{
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+    text-align: center; 
+    width: 800px 800px;
+    height: 100px 100px;
+}
+.skill-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.skill-box{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: azure;
+    padding: 10px;
+    cursor: pointer;
+    width: 120px;
+    height: 120px;
+    border-radius: 10px;
+    font-size: 20px;
+    box-shadow: #58595a;
+    text-decoration: none;
+    border: 2px solid rgb(82, 84, 84) ;
+    border-color: #5e7f88;
+}
+.skill-box:hover{
+    transform: scale(1.05);
+    color: #747778;
+}
+.project{
+    background-color: black;
+    color: azure;
+    font-size: 20px;
+    text-align: center;
+}
+.list{
+    text-align: center;
+    margin: 30px;
+    max-width: 1200px;
+    color: azure;
+}
+.list ul{
+    list-style-type: disc;
+    padding-left: 100px;
+    text-align: left;
+    display: inline-block;
+}
+
+
+</style>
+</head>
+<body>
+
+    <header>
+        <div >
+            <section>
+               <div class="design">
+                <a class="design" href="#home">Home</a>
+                <a class="design"  href="#about">About</a>
+                <a class="design"  href="#education">Education</a>
+                <a class="design" href="#skills">Skills</a>
+                <a class="design"  href="#project">Project</a>
+                <a class="design"  href="#contact">Contact</a>
+               </div>
+            </section>
+        </div>           
+    </header>
+
+    <section>
+        <div class="image">
+            <img src="images/image1.jpg" alt="Harini's profile" style="width: 300px; height: 300px; border-radius: 600px;"></div>
+            <div class="english" id="home">
+            <h3 style="font-size: 40px;">Hello, I'm Harinisree V,<br> a <span style="color: #19bde6;">Frontend Developer</span> </h3> 
+            <p style="font-size: 25px;">Driven by code, and innovation. Passionate about<span style="color: #19bde6;">Frontend developer <br></span> focused on enginnering scalable, secure, and user-centric digital<br> systems that solve real-world problems.</p>
+        </div>     
+
+        <div class="back">
+            <button style="cursor: pointer;">Hire Me</button>
+            <button style="cursor: pointer;">Resume</button>
+
+        <div class="con">
+            <a href="https://www.linkedin.com/in/harinisree-venkatesan-770624294" target="_blank" style="color: #19bd">
+                <i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/Harinisreevenkatesan" target="_blank" style="color: azure;">
+                    <i class="fab fa-github"></i></a>
+                    <a href="https://www.instagram.com/harinisree_venkatesan?igsh=cXlsZmVpdzY4dnlz" target="_blank" style="color: rgb(239, 16, 146);">
+                        <i class="fab fa-instagram"></i></a>    
+        </div>  
+
+        <div class="ideas" id="about">
+            <h2 style="font-size: 50px;">About <span style="color: #19bde6;"> Me</span></h2>
+            <h4 style="font-size: 23px; font-size: 25px;">Hey there, I'm <span style="color: #19bde6;">Harinisree V</span>,<br> a Passionate <span style="color: #19bde6;">Frontend developer</span></h4>
+            <p>Transformin ideas into real life solutions in a clear and creative manner. With deep<br> passion for <span style="color: #19bde6;">Generative AI</span> and <span style="color: #19bde6;"> Data Analyts</span> and I am interested in creating a respovise <br> web applications that are intelligent, secure and easy to use.<br>
+        </div>
+
+        <div class="education" id="education">
+            <h2 style="color: azure; font-size: 50px; "><b>Education</b></h2>
+            <h3><span style="color: #19bde6; font-size: 30px; font-size: 40px;">College</span></h3>
+            <p style="color: rgb(130, 132, 132);">B.E. in Computer Science and Engineering (2022-2026)</p>
+            <p>I am currently in my final year of Bachelor of Enginnering in Computer Science and <br> Engineering at Dhirajlal Gandhi College of Technology, Salem, TamilNadu, India.</p>
+            <p style="font-size: 25px;"><b>Current CGPA: 8.86</b></p>
+            <p style="color: #19bde6; font-size: 40px;"><b>Schooling</b></p>
+            <p>I have completed my schooling at Sri Vidya Mandir Matric Higher Secondary School, Palacode, Dharmapuri. </p>
+            <p><b>HSC Percentage: 90.8% <br> SSLC Percentage: 80.3%</b></p>
+        </div>   
+
+        <div class="skills" id="skills">
+            <h2 style="color: azure; font-size: 50px;">My Skill</h2>
+            <div class="skills-section">
+                <button><div class="skill-box">HTML</div></button> 
+                <button><div class="skill-box">CSS</div></button>
+                <button><div class="skill-box">Javascript</div></button>
+                <button><div class="skill-box">Python</div></button>
+                <button><div class="skill-box">Excel</div></button>
+                <button><div class="skill-box">MySQL</div></button>
+            </div>
+        </div>
+        <div class="project" id="project">
+            <h2 style="color: azure; font-size: 50px;">Project</h2>
+            <p>I had done my project in Electrical current safety in agriculture which uses a real time data to monitoring <br> system detects circuit faults, appliance damage using sensors and it prevents from hazards <br> and improve energy efficient in agriculture.</p>
+            <div class="list">
+                <h2 style="color: #19bde6;">Components</h2>
+                <h3 style="color: rgb(127, 92, 47);">Hardware Requirements</h3>
+                <ul>
+                    <li>PC / Laptop</li>
+                    <li>Sensors</li>
+                    <li>Microcontroller Unit</li>
+                    <li>communication Modules</li>
+                    <li>Alerting components</li>
+                </ul>
+                <h3 style="color: rgb(127, 92, 47);">Software Requirements</h3>
+                <ul>
+                    <li>Python Flask Framework</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>Arduino IDE</li>
+                    <li>VSCode</li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+
+
+        
+    </section>
+
+
+</body>
+</html>
