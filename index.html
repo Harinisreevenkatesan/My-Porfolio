@@ -10,7 +10,8 @@
         .design{
             flex-direction: column;
             align-items: center;
-            padding: 10px;
+            padding: 20px;
+            font-size: 20px;
         }
         .design span:hover{
             background-color: #0056b3;
@@ -84,8 +85,12 @@
         }
     }
     @media (max-width:480px){
+        body{
+            background-color: black;
+        }
         .design{
-          font-size: 14px;
+          font-size: 10px;
+          gap: 5px;
         }
         .design span:hover{
             background-color: #ff5722;
@@ -93,6 +98,7 @@
         }
         #english{
             padding: 30px;
+            background-color: black;
         }
         #english h3{
             font-size: 28px;
@@ -133,7 +139,10 @@
             font-size: 14px;
         }
         .image{
-            width: 150px;
+           display: block;
+           margin: 20px;
+           width: 100%;
+
         }
         .back{
             font-size: 14px;
@@ -161,11 +170,11 @@
        
 .design{
    color: rgb(240, 200, 149);
-   font-size: 30px;
-   padding: 15px;
+   font-size: 15px;
+   padding: 10px;
    text-align: end;
-   word-spacing: 20px;
-   background-color: rgb(43, 47, 51);
+   word-spacing: 5;
+   background-color: rgb(56, 55, 55);
    text-decoration: none;
    
  }
@@ -244,8 +253,9 @@
     font-size: 20px;
     background-color: rgb(0, 0, 0);
     text-align: center; 
-    width: 800px 800px;
+    width: 300px 300px;
     height: 100px 100px;
+    padding-bottom: 10px;
 }
 .skill-section{
     display: flex;
@@ -284,7 +294,7 @@
 .list{
     text-align: center;
     margin: 30px;
-    max-width: 1200px;
+    max-width: 100%px;
     color: azure;
 }
 .list ul{
@@ -292,6 +302,47 @@
     padding-left: 100px;
     text-align: left;
     display: inline-block;
+}
+.contact{
+     background-color: black;
+     text-align: center;
+     color: white;
+}
+.contact form{
+    align-items: center;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15PX;
+    margin: 0 auto;
+    max-width: 300px;
+    font-size: 30px;
+}
+.contact input,
+.contact textarea{
+    width: 400px;
+    height: 30px;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: black;
+    color: azure;
+    text-align: center;
+    cursor: pointer;
+}
+.button-group{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    max-width: 300px;
+    margin: 0 auto;
+    padding-top: 30px 40px;
+    flex: 1;
+    width: 190px;
+    height: 60px;
+    align-items: center;
+    cursor: pointer; 
 }
 
 
@@ -316,85 +367,91 @@
 
     <section>
         <div class="image">
-            <img src="images/image1.jpg" alt="Harini's profile" style="width: 300px; height: 300px; border-radius: 600px;"></div>
+            <img src="image/image1.jpg" alt="Harini's profile" style="width: 300px; height: 300px; border-radius: 600px;"></div>
             <div class="english" id="home">
-            <h3 style="font-size: 40px;">Hello, I'm Harinisree V,<br> a <span style="color: #19bde6;">Frontend Developer</span> </h3> 
-            <p style="font-size: 25px;">Driven by code, and innovation. Passionate about<span style="color: #19bde6;">Frontend developer <br></span> focused on enginnering scalable, secure, and user-centric digital<br> systems that solve real-world problems.</p>
-        </div>     
-
-        <div class="back">
-            <button style="cursor: pointer;">Hire Me</button>
-            <button style="cursor: pointer;">Resume</button>
-
-        <div class="con">
-            <a href="https://www.linkedin.com/in/harinisree-venkatesan-770624294" target="_blank" style="color: #19bd">
-                <i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Harinisreevenkatesan" target="_blank" style="color: azure;">
-                    <i class="fab fa-github"></i></a>
-                    <a href="https://www.instagram.com/harinisree_venkatesan?igsh=cXlsZmVpdzY4dnlz" target="_blank" style="color: rgb(239, 16, 146);">
-                        <i class="fab fa-instagram"></i></a>    
-        </div>  
-
-        <div class="ideas" id="about">
-            <h2 style="font-size: 50px;">About <span style="color: #19bde6;"> Me</span></h2>
-            <h4 style="font-size: 23px; font-size: 25px;">Hey there, I'm <span style="color: #19bde6;">Harinisree V</span>,<br> a Passionate <span style="color: #19bde6;">Frontend developer</span></h4>
-            <p>Transformin ideas into real life solutions in a clear and creative manner. With deep<br> passion for <span style="color: #19bde6;">Generative AI</span> and <span style="color: #19bde6;"> Data Analyts</span> and I am interested in creating a respovise <br> web applications that are intelligent, secure and easy to use.<br>
-        </div>
-
-        <div class="education" id="education">
-            <h2 style="color: azure; font-size: 50px; "><b>Education</b></h2>
-            <h3><span style="color: #19bde6; font-size: 30px; font-size: 40px;">College</span></h3>
-            <p style="color: rgb(130, 132, 132);">B.E. in Computer Science and Engineering (2022-2026)</p>
-            <p>I am currently in my final year of Bachelor of Enginnering in Computer Science and <br> Engineering at Dhirajlal Gandhi College of Technology, Salem, TamilNadu, India.</p>
-            <p style="font-size: 25px;"><b>Current CGPA: 8.86</b></p>
-            <p style="color: #19bde6; font-size: 40px;"><b>Schooling</b></p>
-            <p>I have completed my schooling at Sri Vidya Mandir Matric Higher Secondary School, Palacode, Dharmapuri. </p>
-            <p><b>HSC Percentage: 90.8% <br> SSLC Percentage: 80.3%</b></p>
-        </div>   
-
-        <div class="skills" id="skills">
-            <h2 style="color: azure; font-size: 50px;">My Skill</h2>
-            <div class="skills-section">
-                <button><div class="skill-box">HTML</div></button> 
-                <button><div class="skill-box">CSS</div></button>
-                <button><div class="skill-box">Javascript</div></button>
-                <button><div class="skill-box">Python</div></button>
-                <button><div class="skill-box">Excel</div></button>
-                <button><div class="skill-box">MySQL</div></button>
-            </div>
-        </div>
-        <div class="project" id="project">
-            <h2 style="color: azure; font-size: 50px;">Project</h2>
-            <p>I had done my project in Electrical current safety in agriculture which uses a real time data to monitoring <br> system detects circuit faults, appliance damage using sensors and it prevents from hazards <br> and improve energy efficient in agriculture.</p>
-            <div class="list">
-                <h2 style="color: #19bde6;">Components</h2>
-                <h3 style="color: rgb(127, 92, 47);">Hardware Requirements</h3>
-                <ul>
-                    <li>PC / Laptop</li>
-                    <li>Sensors</li>
-                    <li>Microcontroller Unit</li>
-                    <li>communication Modules</li>
-                    <li>Alerting components</li>
-                </ul>
-                <h3 style="color: rgb(127, 92, 47);">Software Requirements</h3>
-                <ul>
-                    <li>Python Flask Framework</li>
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Javascript</li>
-                    <li>Arduino IDE</li>
-                    <li>VSCode</li>
-                </ul>
+                <h3 style="font-size: 40px;">Hello, I'm Harinisree V,<br> a <span style="color: #19bde6;">Frontend Developer</span> </h3> 
+                <p style="font-size: 25px;">Driven by code, and innovation. Passionate about<span style="color: #19bde6;">Frontend developer <br></span> focused on enginnering scalable, secure, and user-centric digital<br> systems that solve real-world problems.</p>
+            </div>     
+            <div class="back">
+                <button style="cursor: pointer; font-size: 30px; padding: 10px; border-color: #747778;">Hire Me</button>
+                <button style="cursor: pointer; font-size: 30px; padding: 10px; border-color: #747778;">Resume</button>
+                <div class="con">
+                <a href="https://www.linkedin.com/in/harinisree-venkatesan-770624294" target="_blank" style="color: #19bd">
+                    <i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/Harinisreevenkatesan" target="_blank" style="color: azure;">
+                        <i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/harinisree_venkatesan?igsh=cXlsZmVpdzY4dnlz" target="_blank" style="color: rgb(239, 16, 146);">
+                            <i class="fab fa-instagram"></i></a>    
+            </div>  
+            
+            <div class="ideas" id="about">
+                <h2 style="font-size: 50px;">About <span style="color: #19bde6;"> Me</span></h2>
+                <h4 style="font-size: 23px; font-size: 25px;">Hey there, I'm <span style="color: #19bde6;">Harinisree V</span>,<br> a Passionate <span style="color: #19bde6;">Frontend developer</span></h4>
+                <p>Transformin ideas into real life solutions in a clear and creative manner. With deep<br> passion for <span style="color: #19bde6;">Generative AI</span> and <span style="color: #19bde6;"> Data Analyts</span> and I am interested in creating a respovise <br> web applications that are intelligent, secure and easy to use.<br>
             </div>
             
+            <div class="education" id="education">
+                <h2 style="color: azure; font-size: 50px; "><b>Education</b></h2>
+                <h3><span style="color: #19bde6; font-size: 30px; font-size: 40px;">College</span></h3>
+                <p style="color: rgb(130, 132, 132);">B.E. in Computer Science and Engineering (2022-2026)</p>
+                <p>I am currently in my final year of Bachelor of Enginnering in Computer Science and <br> Engineering at Dhirajlal Gandhi College of Technology, Salem, TamilNadu, India.</p>
+                <p style="font-size: 25px;"><b>Current CGPA: 8.86</b></p>
+                <p style="color: #19bde6; font-size: 40px;"><b>Schooling</b></p>
+                <p>I have completed my schooling at Sri Vidya Mandir Matric Higher Secondary School, Palacode, Dharmapuri. </p><p><b>HSC Percentage: 90.8% <br> SSLC Percentage: 80.3%</b></p>
+            </div>  
 
+            <div class="skills" id="skills">
+                <h2 style="color: azure; font-size: 50px;">My Skill</h2>
+                <div class="skills-section">
+                    <button><div class="skill-box">HTML</div></button> 
+                    <button><div class="skill-box">CSS</div></button>
+                    <button><div class="skill-box">Javascript</div></button>
+                    <button><div class="skill-box">Python</div></button>
+                    <button><div class="skill-box">Excel</div></button>
+                    <button><div class="skill-box">MySQL</div></button>
+                </div>
+            </div>
+            
+            <div class="project" id="project">
+                <h2 style="color: azure; font-size: 50px;">Project</h2>
+                <p>I had done my project in Electrical current safety in agriculture which uses a real time data to monitoring <br> system detects circuit faults, appliance damage using sensors and it prevents from hazards <br> and improve energy efficient in agriculture.</p>
+            
+                <div class="list">
+                    <h2 style="color: #19bde6;">Components</h2>
+                    <h3 style="color: rgb(127, 92, 47);">Hardware Requirements</h3>
+                    <ul>
+                        <li>PC / Laptop</li>
+                        <li>Sensors</li>
+                        <li>Microcontroller Unit</li>
+                        <li>communication Modules</li>
+                        <li>Alerting components</li>
+                    </ul>
+                    <h3 style="color: rgb(127, 92, 47);">Software Requirements</h3>
+                    <ul>
+                        <li>Python Flask Framework</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Arduino IDE</li>
+                        <li>VSCode</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contact" id="contact">
+                <h2 style="color: azure; font-size: 50px; text-align: center;">Contact Me</h2>
+                <form action="hhtps://formspree.io/f/your-form-id" method="POST">
+                    <input type="text" name="name" placeholder="FullName">
+                    <input type="text" name="email" placeholder="Email address">
+                    <input type="number" name="mobile number" placeholder="Mobile Number">
+                    <input type="message" rows="5" placeholder="Your Message">
+                </form>
+
+                <div class="button-group">
+                    <button type="submit" style="font-size: 20px; padding: 10px; border-color: #747778;  " >Submit</button>
+                    <button type="reset" style="font-size: 20px; padding: 10px; border-color: #747778;">Reset</button>
+                </div>
+            </div>
         </div>
-
-
-
-        
-    </section>
-
-
+        </section>
 </body>
 </html>
